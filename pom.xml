@@ -37,7 +37,7 @@
         <tag>v5.5.1-SNAPSHOT</tag>
     </scm>
     <properties>
-        <sos.version>5.5.1-SNAPSHOT</sos.version>
+        <sos.version>6.0.0-PR.6</sos.version>
         <conf.sos.name>52nSOS</conf.sos.name>
         <version.osgeolive>${project.version}</version.osgeolive>
         <timestamp>${maven.build.timestamp}</timestamp>
