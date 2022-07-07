@@ -1,0 +1,23 @@
+{
+    "defaultService": {
+        "serviceId": "1",
+        "apiUrl": "http://localhost:8080/52nSOS/api/"
+    },
+    "datasetApis": [
+        {
+            "name": "localhost",
+            "url": "http://localhost:8080/52nSOS/api/"
+        }
+    ],
+    "languages": [
+        {
+            "label": "Deutsch",
+            "code": "de"
+        },
+        {
+            "label": "English",
+            "code": "en"
+        }
+    ],
+    "supportTimeseriesSymbols": true
+}

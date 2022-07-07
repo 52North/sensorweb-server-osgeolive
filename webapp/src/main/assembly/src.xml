@@ -1,0 +1,25 @@
+<assembly
+        xmlns="http://maven.apache.org/ASSEMBLY/2.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 https://maven.apache.org/xsd/assembly-2.1.0.xsd">
+    <id>make-osgeo-live-assembly</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <files>
+        <file>
+            <source>src/main/assembly/52nSOS.png</source>
+        </file>
+        <file>
+            <source>src/main/assembly/52nSOS.sql</source>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>src/main/assembly/logo.gif</source>
+        </file>
+        <file>
+            <source>target/${conf.sos.name}.war</source>
+        </file>
+    </files>
+</assembly>
