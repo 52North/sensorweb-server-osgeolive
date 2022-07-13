@@ -66,7 +66,7 @@ services:
       - POSTGRES_PASSWORD=user
       - POSTGRES_DB=52nSOS
     volumes:
-      - "${PWD}/../src/main/assembly/52nSOS.sql:/docker-entrypoint-initdb.d/zz_sos_init.sql"
+      - "${PWD}/sos-init.sql:/docker-entrypoint-initdb.d/zz_sos_init.sql"
     networks:
       network:
         ipv4_address: 172.52.23.100
@@ -76,7 +76,7 @@ services:
 #
 #
   sos:
-    image: tomcat:9.0.64-jre8
+    image: tomcat:9.0.58-jre11
     ports:
       - 8080:8080
       - 8000:8000
