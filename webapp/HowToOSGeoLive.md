@@ -1,4 +1,4 @@
-# 52Â°North SOS OSGeo-Live Contribution preparation
+# 52°North SOS OSGeo-Live Contribution preparation
 
 1. **Create SOS package**
 
@@ -17,7 +17,14 @@
 1. **Example Data Update**
 
     1. Identify software versions of OSGeoLive via:
-
+    https://wiki.osgeo.org/wiki/Live_GIS_Build#Steps_to_create_the_build_.28repeat_as_much_as_needed.29
+    
+    https://ekiwi-blog.de/20178/virtualbox-linux-lubuntu-installieren/
+    	
+		  1. Download latest development image:
+    	 	  ```
+			  http://download.osgeo.org/livedvd/releases/
+			  ```
          1. tomcat version:
             ```
             user@osgeolive:~$ /usr/share/tomcat8/bin/version.sh
@@ -32,10 +39,10 @@
             the output of `version.sh`:
             ```
             db:
-              image: mdillon/postgis:10-alpine
+              image: postgis/postgis:14-3.2-alpine
             [...]
             sos:
-              image: tomcat:8.5-jre8-alpine
+              image: tomcat:9.0-jre8-alpine
             ```
 
       1. **Optional**: Update the following files from the deployed 52N-SOS instance:
