@@ -40,8 +40,8 @@
                     </webResources>
                     <overlays>
                         <overlay>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>sos-webapp</artifactId>
+                            <groupId>org.n52.sensorweb-server.sos</groupId>
+							<artifactId>sos-webapp</artifactId>
                         </overlay>
                     </overlays>
                 </configuration>
@@ -71,9 +71,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+			<groupId>org.n52.sensorweb-server.sos</groupId>
             <artifactId>sos-webapp</artifactId>
-            <version>${project.version}</version>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
